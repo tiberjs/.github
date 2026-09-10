@@ -10,15 +10,6 @@ TiberJS is a collection of execution-first building blocks for Node.js and TypeS
 | [`tiberjs/server`](https://github.com/tiberjs/server)         | HTTP application framework, routing, middleware, validation, request and response handling, Node.js integration, HTTP feature packages, and route-aware tooling.                                                                                                        |
 | [`tiberjs/transports`](https://github.com/tiberjs/transports) | WebSocket, microservice, gRPC, scheduling, Redis, Kafka, and RabbitMQ packages built on the runner execution model.                                                                                                                                                     |
 
-The dependency direction is intentional:
-
-```text
-server ──────> runner
-transports ──> runner
-```
-
-Runner has no dependency on either sibling repository, and server and transports remain independently releasable.
-
 ## Start here
 
 Choose the repository that owns the problem you are solving:
